@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
+
 import kr.co.dhflour.guestbook.vo.GuestbookVo;
 
 public class GuestbookDao {
@@ -34,8 +36,8 @@ public class GuestbookDao {
 	}
 	
 	// 조회
-	public ArrayList<GuestbookVo> fetchList() {
-		ArrayList<GuestbookVo> list = new ArrayList<GuestbookVo>();
+	public List<GuestbookVo> fetchList() {
+		List<GuestbookVo> list = new ArrayList<GuestbookVo>();
 		
 		Connection conn = null;
 		Statement  stmt = null;

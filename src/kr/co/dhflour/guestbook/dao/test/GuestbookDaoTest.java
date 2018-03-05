@@ -1,6 +1,7 @@
 package kr.co.dhflour.guestbook.dao.test;
 
-import java.util.ArrayList;
+import java.util.List;
+
 import kr.co.dhflour.guestbook.dao.GuestbookDao;
 import kr.co.dhflour.guestbook.vo.GuestbookVo;
 
@@ -39,7 +40,7 @@ public class GuestbookDaoTest {
 	// 조회 리스트
 	public static void fetchListTest() {
 		GuestbookDao dao = new GuestbookDao() ;
-		ArrayList<GuestbookVo> list = dao.fetchList();
+		List<GuestbookVo> list = dao.fetchList();
 		
 		//순회
 		/*int count = list.size();
